@@ -1,0 +1,90 @@
+
+
+// .table_container{
+//     width:85%;
+//     margin-top:100px;
+// display: block;
+// float: right;
+//     table{
+//         width:100%;
+//         tr{
+//             th{
+//                  border:1px solid;
+//                  text-align: center;
+//             }
+//             td{
+//                 border:1px solid;
+//                 text-align: center;
+//                 .image{
+//                     width:120px;
+//                     height:100px;
+//                 }
+//                 .edit{
+//                     background:teal;
+//                     color:white;
+//                     padding:5px;
+//                     border:none;
+//                     border-radius: 3px;
+//                 }
+//                 .delete{
+//                     background:hsl(0, 98%, 42%);
+//                     @extend .edit;
+//                 }
+//             }
+           
+//         }
+//     }
+// }
+// .pagination{
+//     height:100px;
+//     background:teal ;
+//     margin-top:100px;
+//     button{
+//         height:50px;
+//         width:100px;
+//         background:gray;
+//     }
+// }
+
+
+
+/* index.module.scss */
+
+.table_container {
+     width:85%;
+    margin-top:100px;
+display: block;
+ float: right;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    img.image {
+      height:100px;
+      width:120px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Apply responsive styles for screens with a maximum width of 768px */
+    table {
+      th,
+      td {
+        padding: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* Add more media queries and responsive styles as needed */

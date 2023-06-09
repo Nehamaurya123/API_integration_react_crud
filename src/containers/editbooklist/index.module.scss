@@ -1,0 +1,48 @@
+@import "../../styles/variable";
+.edit_container{
+    width:30vw;
+    box-shadow: 2px 2px 2px 2px $colorPrimary;
+    margin:100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    box-sizing: border-box;
+.login{
+        color:teal;
+        font-size:$fontSizeExtraLarge;
+        font-weight: 800;
+        margin-bottom:20px;
+    }
+    .image{
+        height:2.5rem;
+        width:25vw;
+        // border:1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:10px;
+        img{
+            height:50px;
+            width:100px;
+        }
+        input{
+            height:100%;
+            width: 100%;
+            font-size:20px;  
+        }
+    }
+    .name{
+        @extend .image;
+    }
+    .author{
+        @extend .image;
+    }
+    button{
+        padding:10px;
+        margin-top:10px;
+        background:$colorPrimary;
+        color:$colorBackground;
+        font-weight: 800;
+    }
+}

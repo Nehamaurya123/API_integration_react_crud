@@ -1,0 +1,45 @@
+@import "../../styles/variable";
+.login_container{
+    width:30vw;
+    box-shadow: 2px 2px 2px 2px $colorPrimary;
+    margin:100px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    padding:30px;
+    // box-sizing: border-box;
+
+    .login{
+        color:$colorPrimary;
+    }
+    .email{
+        margin:20px;
+        width:80%;
+        height:30px;
+       
+        input{
+           height:100%;
+           width:100%;
+        }
+    }
+    .password{
+        @extend .email;
+        .input{
+           height:100%;
+           width:100%;
+        }
+    }
+button{
+    padding:10px;
+    font-size: medium;
+    font-weight: 700;
+    background: teal;
+    color:#fff;
+    border:none;
+    border-radius: 3px;
+}
+}
